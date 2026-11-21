@@ -1,0 +1,8 @@
+steps:
+  - label: "Build"
+    command: echo "building .." && uname -a
+    key: build
+
+  - label: "test"
+    command: echo "testing"
+    depends_on: build
