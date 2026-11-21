@@ -1,0 +1,6 @@
+steps:
+  label: "flaky"
+  command: "exit 1"
+  retry:
+    automatic:
+    limit: 2
