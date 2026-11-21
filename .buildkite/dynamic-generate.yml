@@ -2,4 +2,4 @@ steps:
   - label: ":pipeline: generate"
     command: |
       set -euo pipefail
-      bash .buildkite/
+      bash .buildkite/dynamic-bash.sh | buildkite-agent pipeline upload
