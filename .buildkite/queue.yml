@@ -2,4 +2,4 @@ steps:
   - label: "wrong queue"
     command: echo "hello from the wrong queue"
     agents:
-      queue: linux-smalle
+      queue: linux-small
