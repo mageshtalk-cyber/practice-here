@@ -8,6 +8,6 @@ steps:
 
   - label: "deploy"
     command: echo "deploying build $$BUILDKITE_BUILD_NUMBER"
-    depends on: approve
+    depends_on: approve
     
   
