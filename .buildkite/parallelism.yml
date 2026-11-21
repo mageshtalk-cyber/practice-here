@@ -1,0 +1,13 @@
+steps:
+  - label: "shared"
+    command: echo "I am shared $$BUILDKITE_PARALLEL_JOB of $$BUILDKITE_PARALLEL_JOB_COUNT"
+    parallelism: 3
+
+  - block: "Deploy to prod ?"
+    key: approve
+
+  - label: "deploy"
+    command: echo "deploying build $$BUILDKITE_BUILD_NUMBER"
+    depends on: approve
+    
+  
