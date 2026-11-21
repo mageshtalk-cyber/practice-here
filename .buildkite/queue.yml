@@ -1,0 +1,5 @@
+steps:
+  - label: "wrong queue"
+    command: echo "hello from the right queue"
+    agents:
+      queue: linux-small
