@@ -1,0 +1,5 @@
+steps:
+  - label: ":pipeline: generate"
+    command: |
+      set -euo pipefail
+      bash .buildkite/
