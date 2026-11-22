@@ -6,7 +6,7 @@ steps:
     env:
       MY_VAR: "Hello Docker"
     plugins:
-      - docker#v5.15.0:
+      - docker#v5.14.0:
           image: "alpine:3.20"
           propagate-environment: true
     
