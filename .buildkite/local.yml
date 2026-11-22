@@ -1,0 +1,5 @@
+steps:
+  - label: "run on my laptop"
+    command: "echo Hello from %COMPUTERNAME% && ver"
+    agents:
+      queue: local
