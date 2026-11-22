@@ -4,7 +4,7 @@ steps:
 
   - label: "Run only on main"
     command: echo "Hello I run only on main branch"
-    if: build.brach == "main"
+    if: build.branch == "main"
 
   - label: "Run if it is non main"
     command: echo "Hello I can run if it is non main"
