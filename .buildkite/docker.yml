@@ -8,5 +8,5 @@ steps:
     plugins:
       - docker#v5.14.0:
           image: "alpine:3.20"
-          propagate-environment: true
+          propagate-environment: false
     
