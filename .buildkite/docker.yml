@@ -1,0 +1,12 @@
+steps:
+  - label: "inside docker"
+    command: |
+      echo "inside container: $$(cat /etc/os-release | heal -1)"
+      echo "my=$$MY_VAR
+    env:
+      MY_VAR: "Hello Docker"
+    plugins:
+      - docker#v4.14.0:
+          image: "alpine:3.20"
+          propagate-environment: true
+    
