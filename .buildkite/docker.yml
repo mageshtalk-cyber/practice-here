@@ -2,7 +2,7 @@ steps:
   - label: "inside docker"
     command: |
       echo "inside container: $$(cat /etc/os-release | head -1)"
-      echo "my=$$MY_VAR
+      echo "my=$$MY_VAR"
     env:
       MY_VAR: "Hello Docker"
     plugins:
