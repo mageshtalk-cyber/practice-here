@@ -1,0 +1,11 @@
+steps:
+  - label: "Run everywhere"
+    command: echo "Hello i can run anywhere"
+
+  - label: "Run only on main"
+    command: echo "Hello I run only on main branch"
+    if: build.brach == "main"
+
+  - label: "Run if it is non main"
+    command: echo "Hello I can run if it is non main"
+    if: build.branch != "main"
